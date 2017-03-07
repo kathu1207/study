@@ -23,7 +23,11 @@ namespace _17_03_06
                 end_1 = box;        
             }
 
-            if((start_1 < end_2) && (end_1 > start_2))
+            if((start_1 < start_2) && (end_1 < start_2))
+            {
+                Console.WriteLine("라인이 겹친다.");
+            }
+            else if((start_2 < start_1) && (end_2 < start_1)
             {
                 Console.WriteLine("라인이 겹친다.");
             }
