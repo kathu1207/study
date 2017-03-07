@@ -30,6 +30,7 @@ namespace _17_03_07
             }
             Console.WriteLine(sum);
             */
+
             /*
              * 짝수의 합 
             int sum = 0;
@@ -43,6 +44,8 @@ namespace _17_03_07
             }
             Console.WriteLine(sum);
             */
+
+            /* 바람개비 별
             for(int i = 1; i<=5; i++)
             {
                 for (int j = 0; j < i; j++)
@@ -81,7 +84,7 @@ namespace _17_03_07
                 }
                 Console.WriteLine(" ");
             }
-
+            */
         }
     }
 }
