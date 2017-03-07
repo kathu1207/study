@@ -20,8 +20,30 @@ namespace _17_03_07_3_
                 Console.WriteLine(num[i]);
             }
             */
+
             int[] score = new int[20]{
                 80,74,81,90,34,84,76,95,45,66,74,82,76,57,51,88,73,98,51,60};
+
+            
+            // 최대값, 최소값 구하기
+            int max = score[0];
+            int min = score[0];
+
+            for(int i= 0;i<20;i++)
+            {
+                if (score[i] > max)
+                {
+                    max = score[i];
+                }
+                else if(score[i]<min)
+                {
+                    min = score[i];
+                }
+            }
+            Console.WriteLine(max);
+            Console.WriteLine(min);
+            
+           
         }
     }
 }
