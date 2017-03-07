@@ -30,6 +30,57 @@ namespace _17_03_07
             }
             Console.WriteLine(sum);
             */
+            /*
+             * 짝수의 합 
+            int sum = 0;
+            for(int i = 1;i<=100;i++)
+            {
+                if(i%2 == 0)
+                {
+                    sum = i + sum;
+                }
+                    
+            }
+            Console.WriteLine(sum);
+            */
+            for(int i = 1; i<=5; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                for (int z = 5; z > i; z--)
+                {
+                    Console.Write(" ");
+                }
+                for (int z = 5; z >= i; z--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine(" ");
+            }
+
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int z = 5; z >= i; z--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int z = 5; z >=i; z--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine(" ");
+            }
 
         }
     }
