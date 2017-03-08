@@ -32,10 +32,18 @@ namespace _17_03_08_3_
             selectionSort(score1);
             selectionSort(score2);
             
-            for(int i=0;i<score1.Length;i++)
-                  Console.WriteLine(score1[i]);
+            for(int i = 0; i < score1.Length; i++)
+            {
+                Console.Write("{0} ", score1[i]);
+            }
 
-            
+            Console.WriteLine(" ");
+
+            for (int i = 0; i < score1.Length; i++)
+            {
+                Console.Write("{0} ", score2[i]);
+            }
+
         }
     }
 }
