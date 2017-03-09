@@ -18,8 +18,18 @@ namespace _17_03_09_2_
         }
         static void Main(string[] args)
         {
-            int num = 8;
-            Console.WriteLine(fibo(num));
+            Console.WriteLine("종료할려면 exit");
+            while (true)
+            {
+                string str = Console.ReadLine();
+                int num = Int32.Parse(str);
+                Console.WriteLine("해당 수열은 {0}",fibo(num));
+
+                if (str == "exit")
+                    break;
+
+            }
+            
         }
     }
 }
