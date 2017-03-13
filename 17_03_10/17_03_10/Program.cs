@@ -104,13 +104,20 @@ namespace _17_03_10
             return total;
 
         }
-        public static void strsize(char[] arr)
+        public static int strsize(char[] arr)
         {
             // 배열에 문자가 다 들어가고 그것을 안에서 배열을 나눈다. 
+
+            int count = 1;
+
             for(int i = 0; i< arr.Length; i++)
             {
-
+                if (char.IsWhiteSpace(arr[i]))
+                {
+                    count = count + 1;
+                } 
             }
+            return count;
         }
 
         public static void score(int a)
@@ -266,7 +273,7 @@ namespace _17_03_10
 
         public static int paperpiz(int a,int[] arr)
         {
-           
+           // 지민이의 책 수정 요망...
             if(a < 10)
             {
                 for (int i = 1; i <= a; i++)
@@ -291,6 +298,32 @@ namespace _17_03_10
 
         }
 
+        public static bool palindrome(char[] arr)
+        {
+            // 미완성 
+            int[] count = new int[10];
+  
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("이름{0}, {1}번째",arr[i],i);
+            }
+
+            for(int i = 0; i < arr.Length/2 ; i++)
+            {
+                for(int j = arr.Length; j < arr.Length; j--)
+                {
+                    if (arr[i] == arr[j])
+                    {
+                        count[i] = count[i] + 1;
+                    }
+                }
+            }
+            return true;
+        }
+
+
+
+
 
         static void Main (string[] args)
         {
@@ -312,10 +345,16 @@ namespace _17_03_10
             Console.WriteLine(8%5);
             */
 
+            /*
             int[] arr = new int[10];
 
             paperpiz(11,arr);
+            */
+            string str = "The Curious Case of Benjamin Button";
 
+            int result =strsize(str.ToCharArray());
+
+            Console.WriteLine(result);
         }
     }
 }
