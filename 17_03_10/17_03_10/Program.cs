@@ -91,7 +91,7 @@ namespace _17_03_10
 
             for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = max / arr[i] * 100;
+                arr[i] = arr[i] / max * 100;
             }
 
             for (int i = 0; i < arr.Length; i++)
