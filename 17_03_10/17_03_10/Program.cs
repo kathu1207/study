@@ -32,7 +32,7 @@ namespace _17_03_10
         }
         public static int sum(int a)
         {
-            // 10,000 보다 작은 자연수 중에 3또는 5의 배수를 모두 더한 값 
+            // 10,000 보다 작은 자연수 중에 3또는 5의 배수를 모두 더한 값 (수정 요망)
             int result = 0;
             int sum = 0; ;
             int i = 1;
@@ -350,11 +350,16 @@ namespace _17_03_10
 
             paperpiz(11,arr);
             */
+            /*
             string str = "The Curious Case of Benjamin Button";
 
             int result =strsize(str.ToCharArray());
 
             Console.WriteLine(result);
+
+            ch
+            */
+            sugar(7);
         }
     }
 }
