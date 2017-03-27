@@ -106,7 +106,7 @@ namespace _17_03_27_2_
                     }
                 }
             }
-            public void swap()
+            public void swap() // 수정 요망 삭제가 제대로 안됨 자리 바꾸기는 성공
             {
                 if(curtnode.left != null)
                 {

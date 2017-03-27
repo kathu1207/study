@@ -43,10 +43,9 @@ namespace _17_03_27
                         Console.WriteLine("없다");
                     }
                 }
-                else if(val > arry[midindex])
+                // 숫자값 똑바로 계산 요망  start = mindex +1 , end = mindex -1
+                else if (val > arry[midindex]) 
                 {
-                    
-
                     midindex = (start + end) / 2;
                     Console.WriteLine("{0} 크다",midindex);
                     distribute(val);
